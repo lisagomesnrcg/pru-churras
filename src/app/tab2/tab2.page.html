@@ -9,14 +9,14 @@
 <ion-content [fullscreen]="true">
   <div class="background"></div>
   <div class="container">
-    <h1 class="atual-point ion-text-center">Valendo: {{valendo}}</h1> 
+    <h1 class="atual-point ion-text-center">Valendo: {{valendo}}</h1>
     <div class="itens">
       <ion-grid>
-       <ion-row>
-         <ion-col>
-          <ion-button color="dark" (click)="pontuacaoAtual(1)" expand="block"> 1 </ion-button>
-         </ion-col>
-         <ion-button color="dark" (click)="pontuacaoAtual(3)" expand="block">3</ion-button>
+        <ion-row>
+          <ion-col>
+            <ion-button color="dark" (click)="pontuacaoAtual(1)" expand="block"> 1 </ion-button>
+          </ion-col>
+          <ion-button color="dark" (click)="pontuacaoAtual(3)" expand="block">3</ion-button>
           </ion-col>
           <ion-col>
             <ion-button color="dark" (click)="pontuacaoAtual(6)" expand="block">6</ion-button>
@@ -35,15 +35,15 @@
           <ion-col></ion-col>
           <ion=col>
             <h1 class="ion-text-center point-time">TIME 2</h1>
-          </ion-col>
+            </ion-col>
         </ion-row>
         <ion-row>
-         <ion-col>
-           <ion-button color="dark" (click)="pontuacaoTime (1, '+')" expanded="block">+</ion-button>
-         </ion-col> 
-         <ion-col></ion-col>
-         <ion-col>
-           <ion-button color="dark" (click)="pontuacaoTIme (2, '+')" expanded="block">+</ion-button> 
+          <ion-col>
+            <ion-button color="dark" (click)="pontuacaoTime (1, '+')" expanded="block">+</ion-button>
+          </ion-col>
+          <ion-col></ion-col>
+          <ion-col>
+            <ion-button color="dark" (click)="pontuacaoTIme (2, '+')" expanded="block">+</ion-button>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -56,9 +56,13 @@
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col><ion-button color="dark" (click)="pontuacaoTime(1, '-')" expand="block">-</ion-button></ion-col>
+          <ion-col>
+            <ion-button color="dark" (click)="pontuacaoTime(1, '-')" expand="block">-</ion-button>
+          </ion-col>
           <ion-col></ion-col>
-          <ion-col><ion-button color="dark" (click)="pontuacaoTime(2, '-')" expand="block">-</ion-button></ion-col>
+          <ion-col>
+            <ion-button color="dark" (click)="pontuacaoTime(2, '-')" expand="block">-</ion-button>
+          </ion-col>
         </ion-row>
       </ion-grid>
       <h1>PARTIDAS</h1>
@@ -70,15 +74,15 @@
           </ion-chip>
         </ion-item>
         <ion-item>
-         <ion-label>TIME 2</ion-label> 
-         <ion-chip slot="end">
-           <ion-label>{{partidasTime2}}</ion-label>
-         </ion-chip>
+          <ion-label>TIME 2</ion-label>
+          <ion-chip slot="end">
+            <ion-label>{{partidasTime2}}</ion-label>
+          </ion-chip>
         </ion-item>
       </ion-card>
       <ion-row>
         <ion-col>
-          <ion-button (click)="limpar()"color="dark" expand="block">LIMPAR</ion-button>
+          <ion-button (click)="limpar()" color="dark" expand="block">LIMPAR</ion-button>
         </ion-col>
       </ion-row>
     </div>
