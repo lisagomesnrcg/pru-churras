@@ -16,7 +16,8 @@
           <ion-col>
             <ion-button color="dark" (click)="pontuacaoAtual(1)" expand="block"> 1 </ion-button>
           </ion-col>
-          <ion-button color="dark" (click)="pontuacaoAtual(3)" expand="block">3</ion-button>
+          <ion-col>
+            <ion-button color="dark" (click)="pontuacaoAtual(3)" expand="block">3</ion-button>
           </ion-col>
           <ion-col>
             <ion-button color="dark" (click)="pontuacaoAtual(6)" expand="block">6</ion-button>
@@ -32,27 +33,27 @@
           <ion-col>
             <h1 class="ion-text-center point-time">TIME 1</h1>
           </ion-col>
-          <ion-col></ion-col>
-          <ion=col>
+
+          <ion-col>
             <h1 class="ion-text-center point-time">TIME 2</h1>
-            </ion-col>
+          </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-button color="dark" (click)="pontuacaoTime (1, '+')" expanded="block">+</ion-button>
+            <ion-button color="dark" (click)="pontuacaoTime(1, '+')" expanded="block">+</ion-button>
           </ion-col>
-          <ion-col></ion-col>
+
           <ion-col>
-            <ion-button color="dark" (click)="pontuacaoTIme (2, '+')" expanded="block">+</ion-button>
+            <ion-button color="dark" (click)="pontuacaoTime(2, '+')" expanded="block">+</ion-button>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
             <h1 class="ion-text-center center-point">{{pontosTime1}}</h1>
           </ion-col>
-          <ion-col></ion-col>
+
           <ion-col>
-            <h1 class="ion-text-center center-point">{{pontosTime2}}</h1>
+            <h1 class="ion-text-center center-point">{{pontosTIme2}}</h1>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -76,7 +77,7 @@
         <ion-item>
           <ion-label>TIME 2</ion-label>
           <ion-chip slot="end">
-            <ion-label>{{partidasTime2}}</ion-label>
+            <ion-label>{{partidasTim2}}</ion-label>
           </ion-chip>
         </ion-item>
       </ion-card>
